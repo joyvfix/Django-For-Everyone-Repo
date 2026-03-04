@@ -1,0 +1,66 @@
+# Django for Everyone — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Core ─────────────────────────────────────────────
+Django>=5.0,<6.0
+python-decouple>=3.8        # Environment variables
+Pillow>=10.0                # Image processing (ImageField)
+
+# ── Database ─────────────────────────────────────────
+psycopg2-binary>=2.9        # PostgreSQL adapter
+
+# ── API (Fase 3) ──────────────────────────────────────
+djangorestframework>=3.15
+djangorestframework-simplejwt>=5.3
+drf-yasg>=1.21              # Swagger/OpenAPI docs
+django-cors-headers>=4.3
+
+# ── Auth & Security ───────────────────────────────────
+django-axes>=6.3            # Brute force protection
+django-ratelimit>=4.1       # Rate limiting
+
+# ── Forms & UI ────────────────────────────────────────
+django-crispy-forms>=2.1
+crispy-bootstrap5>=2024.2
+
+# ── Rich Text (Fase 4 Blog) ───────────────────────────
+django-tinymce>=4.0
+
+# ── Background Tasks (Fase 4 Celery) ─────────────────
+celery>=5.3
+redis>=5.0
+django-celery-beat>=2.6
+flower>=2.0                 # Celery monitoring
+
+# ── Caching ───────────────────────────────────────────
+django-redis>=5.4
+
+# ── Static Files ──────────────────────────────────────
+whitenoise>=6.6
+
+# ── WebSocket (Fase 4 SaaS) ───────────────────────────
+channels>=4.0
+channels-redis>=4.2
+daphne>=4.0
+
+# ── PDF & Export ──────────────────────────────────────
+reportlab>=4.1
+weasyprint>=62.0
+
+# ── Dev Tools ─────────────────────────────────────────
+django-debug-toolbar>=4.3
+django-extensions>=3.2
+ipython>=8.0
+
+# ── Testing ───────────────────────────────────────────
+pytest>=8.0
+pytest-django>=4.8
+factory-boy>=3.3
+coverage>=7.4
+model-bakery>=1.17
+
+# ── Code Quality ──────────────────────────────────────
+black>=24.0
+flake8>=7.0
+isort>=5.13
+pre-commit>=3.7
